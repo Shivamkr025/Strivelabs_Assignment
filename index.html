@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country Explorer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,6 +23,17 @@
             <option value="Europe">Europe</option>
             <option value="Oceania">Oceania</option>
         </select>
+        <select id="language-filter">
+            <option value="">Filter by Language</option>
+        </select>
+        <div id="suggestion-box" class="suggestion-box"></div>
+        <div class="favorites-dropdown">
+            <button onclick="toggleDropdown()" class="dropdown-btn">Favorites <i class="fa-solid fa-heart"
+                    style="color: #ff0000;"></i></button>
+            <div id="favoritesMenu" class="dropdown-content">
+            </div>
+        </div>
+
     </header>
 
     <main id="country-list"></main>

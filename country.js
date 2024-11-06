@@ -20,11 +20,24 @@ function displayCountryDetails(country) {
   const capital = document.createElement("p");
   capital.textContent = `Capital: ${country.capital ? country.capital[0] : "N/A"}`;
 
+  const area = document.createElement("p");
+  area.textContent = `Area: ${country.area.toLocaleString()} km²`;
+
+  const topLevelDomain = document.createElement("p");
+  topLevelDomain.textContent = `Top Level Domain: ${country.tld ? country.tld.join(", ") : "N/A"}`;
+
+  const languages = document.createElement("p");
+  const languageList = country.languages ? Object.values(country.languages).join(", ") : "N/A";
+  languages.textContent = `Languages: ${languageList}`;
+
   countryDetailsContainer.appendChild(flag);
   countryDetailsContainer.appendChild(countryName);
+  countryDetailsContainer.appendChild(topLevelDomain);
+  countryDetailsContainer.appendChild(capital);
   countryDetailsContainer.appendChild(region);
   countryDetailsContainer.appendChild(population);
-  countryDetailsContainer.appendChild(capital);
+  countryDetailsContainer.appendChild(area);
+  countryDetailsContainer.appendChild(languages);
 }
 
 document.getElementById("back-button").addEventListener("click", () => {
