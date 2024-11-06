@@ -1,16 +1,16 @@
-***🌍 Country Explorer***
+****🌍 Country Explorer****
 
 **Country Explorer** is a simple and interactive web app where you can explore information about countries worldwide. Use the app to search for countries, filter them by region, and view detailed information about each country on a separate page.
 
 
-***✨ Features***
+****✨ Features****
 
 **🔍 Search: Quickly** find countries by typing in their names.
 **🌎 Region Filter**: Select a region (like Asia, Europe, etc.) to see countries from that part of the world.
 **⬇️ Load More**: Start with a few countries and load more as you scroll.
 **📄 Detailed View**: Click on a country’s "View Details" button to see additional information like population, region, and more.
 
-***🛠️ Technologies Used***
+****🛠️ Technologies Used****
 
 **HTML/CSS**: For page structure and styling
 **JavaScrip**t: For interactive functionality and API handling
@@ -22,7 +22,7 @@
 **Load More Countries**: Click the "Show More" button to load additional countries.
 **View Detailed Information**: Click "View Details" on a country card to open a new page with extra information about that country.
 
-***JavaScript Features Explained***
+****JavaScript Features Explained****
 
 **🌐 Fetching Country Data**
 The app uses the REST Countries API to get details about all countries (like name, flag, and population). This data loads as soon as the app opens, so it’s ready for you to browse!
